@@ -1,6 +1,6 @@
 # lab-ironhack-html-template
 
-Create the HTML structure, Create the HTML structure trying to clone the web  [https://ironhack-html-template.netlify.app/](https://ironhack-html-template.netlify.app/) 
+Create the HTML structure trying to clone the web  [https://ironhack-html-template.netlify.app/](https://ironhack-html-template.netlify.app/) 
 
 Sections created:
 - Header
@@ -20,4 +20,4 @@ Section not created:
 
 ## Getting Started
 
-- Download the project and open **index.html** in any browser.
+- Download the project and open **index.html** in any browser (Chrome better).
