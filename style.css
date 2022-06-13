@@ -39,8 +39,33 @@
 
 html,
 body {
-  font-family:'Roboto', sans-serif;
+  font-family: 'Montserrat';
+  font-weight: normal;
   font-size: 10px;
   line-height: 3.5em;
   font-weight: 300;
+}
+
+.container {
+    width: 1170px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/* Header */
+.header__wrapper {
+    display:flex;  
+    justify-content: space-between;
+    align-items: center;
+    height:86px; 
+}
+.header__navigation ul {
+    display:flex; 
+}
+.header__navigation-item {
+    margin: 0 15px; 
+    font-size:1.2rem; 
+    font-weight:bold; 
 }
