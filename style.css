@@ -48,7 +48,7 @@ body {
 
 /* Shared */
 .container {
-    width: 1170px;
+    max-width: 1170px;
     padding-right: 15px;
     padding-left: 15px;
     margin-right: auto;
@@ -58,6 +58,9 @@ body {
 .section {
     padding-top: 10rem; 
     padding-bottom:10rem; 
+}
+.section--odd {
+    background-color: #fbfbfb;
 }
 .section + .section {
     padding-bottom:0; 
@@ -92,7 +95,8 @@ body {
     display:flex;  
     justify-content: space-between;
     align-items: center;
-    height:86px; 
+    height:86px;
+    width:100%;  
 }
 .header__navigation ul {
     display:flex; 
@@ -144,8 +148,15 @@ body {
 }
 
 /* About us */
+.about-us__item {
+    width: 33.3% ; 
+}
+.about_us__item-img {
+    width: 100% ;
+    height:auto; 
+}
 .about-us__item  + .about-us__item{
-  padding-left:1.5rem;
+  margin-left:1.5rem;
 }
 .about-us__item-title {
     color: #101010;
@@ -163,3 +174,4 @@ body {
 .about-us__item-title + .about-us__item-desc {
     margin-top:1rem; 
 }
+
