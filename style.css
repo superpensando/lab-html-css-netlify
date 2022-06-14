@@ -42,16 +42,49 @@ body {
   font-family: 'Montserrat';
   font-weight: normal;
   font-size: 10px;
-  line-height: 31.42857143;
-  font-weight: 300;
+  line-height: 1;
 }
 
+
+/* Shared */
 .container {
     width: 1170px;
     padding-right: 15px;
     padding-left: 15px;
     margin-right: auto;
     margin-left: auto;
+}
+
+.section {
+    padding-top: 10rem; 
+    padding-bottom:10rem; 
+}
+.section + .section {
+    padding-bottom:0; 
+}
+
+.section__title {
+    font-size:2.6rem;
+    color: #101010;
+    width:100%;
+    text-align:center; 
+    text-transform: uppercase;
+}
+.section__desc {
+    color: #989898;
+    font-size: 1.8rem;
+    font-family: serif;
+    line-height: 2.8rem;
+    width:100%;
+    text-align:center; 
+}
+.section__title + .section__desc {
+    margin-top:2rem; 
+}
+
+.section__wrapper {
+    display: flex;
+    margin-top: 7rem; 
 }
 
 /* Header */
@@ -65,9 +98,10 @@ body {
     display:flex; 
 }
 .header__navigation-item {
-    margin: 0 15px; 
+    margin: 0 1.5rem; 
     font-size:1.2rem; 
     font-weight:bold; 
+    text-transform: uppercase;
 }
 
 /* Banner */
@@ -90,6 +124,7 @@ body {
     display:flex;
     flex-direction: column;
     justify-content: center;
+    text-transform: uppercase;
 }
 .banner__text-desc1 {
     font-family: serif;
@@ -106,4 +141,25 @@ body {
 }
 .banner__text-desc1 + .banner__text-desc2 {
     margin-top: 3rem; 
+}
+
+/* About us */
+.about-us__item  + .about-us__item{
+  padding-left:1.5rem;
+}
+.about-us__item-title {
+    color: #101010;
+    text-transform: uppercase;
+    margin-top:2rem; 
+    font-size: 1.6rem;
+    letter-spacing: 1px;
+}
+.about-us__item-desc {
+    color: #989898;
+    font-size: 1.3rem;
+    line-height: 2.8rem;
+    font-weight: 300; 
+}
+.about-us__item-title + .about-us__item-desc {
+    margin-top:1rem; 
 }
