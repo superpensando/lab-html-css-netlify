@@ -62,9 +62,6 @@ body {
 .section--odd {
     background-color: #fbfbfb;
 }
-.section + .section {
-    padding-bottom:0; 
-}
 
 .section__title {
     font-size:2.6rem;
@@ -86,9 +83,9 @@ body {
 }
 
 .section__wrapper {
-    display: flex;
     margin-top: 7rem; 
 }
+
 
 /* Header */
 .header__wrapper {
@@ -148,6 +145,9 @@ body {
 }
 
 /* About us */
+.about-us .section__wrapper {
+    display: flex;
+}
 .about-us__item {
     width: 33.3% ; 
 }
@@ -173,5 +173,52 @@ body {
 }
 .about-us__item-title + .about-us__item-desc {
     margin-top:1rem; 
+}
+
+/* Services */
+
+.section__wrapper::after {
+    display: block;
+    content: "";
+    clear: both;
+}
+.services__item {
+    width: calc( 33.3% - 3rem) ;
+    margin-bottom: 3rem;  
+    display:block;
+    float:left; 
+ }
+ .services__item  + .services__item {
+     margin-left:3rem; 
+ }
+.services__item:nth-child(3n+1){
+     margin-left:0; 
+}
+.services__item-title {
+    position: relative;
+     color: #101010;
+     font-size: 1.9rem;
+     font-weight: 300;
+     margin-top:2.5rem;
+     letter-spacing: 2px;
+}
+.services__item-title::after {
+    position:absolute;
+    left:0;
+    bottom: -2.5rem;
+    content:"";
+    background-color: #101010;
+    width: 2.8rem;
+    height: 2px;
+    border: none;
+}
+.services__item-desc {
+    font-size: 1.5rem;
+    color: #777777;
+    letter-spacing: 0.5px;
+    line-height: 2.8rem; 
+}
+.services__item-title + .services__item-desc {
+    margin-top:5rem; 
 }
 
