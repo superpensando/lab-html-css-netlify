@@ -69,6 +69,8 @@ body {
     width:100%;
     text-align:center; 
     text-transform: uppercase;
+    max-width: 600px;
+    margin:0 auto;
 }
 .section__desc {
     color: #989898;
@@ -77,6 +79,8 @@ body {
     line-height: 2.8rem;
     width:100%;
     text-align:center; 
+    max-width: 600px;
+    margin:0 auto;
 }
 .section__title + .section__desc {
     margin-top:2rem; 
@@ -412,7 +416,7 @@ body {
     height:10rem;
 }
 .tastimonial__wrapper {
-    max-width: 400px;
+    max-width: 500px;
     margin:0 auto;
     text-align: center;
     color: #FFF;
@@ -442,3 +446,61 @@ body {
 .tastimonial__location + .tastimonial__quote {
     margin-top:3rem;
 }
+
+
+/* Contact */
+
+.contact__form-top,
+.contact__form-bottom {
+    max-width: 600px;
+    margin:0 auto;
+}
+
+.contact__form-top + .contact__form-bottom {
+    margin-top:2rem;
+}
+
+.contact__form-top > * {
+    display:flex;
+    justify-content: space-between;
+    margin-bottom:2rem;
+ }
+
+ .contact__form-top .contact__form-fieldset,
+ .contact__form-fieldset input,
+ .contact__form-fieldset label {
+    display:block; 
+    width: 90%;
+ }
+
+ .contact__form-fieldset textarea {
+    width:100%;
+    height:8rem;
+    padding:10px 20px
+ }
+
+ .contact__form-fieldset input {
+    height: 47px;
+    padding: 0 20px;
+ }
+
+ .contact__form-fieldset input,
+ .contact__form-fieldset textarea {
+    display: block;
+    font-size: 13px;
+    border: 1px solid #e8e8e8;
+    background: #fff;
+    color: #000
+}
+
+.contact__form-button {
+    background: #333333;
+    color: #fff;
+    padding: 1.5rem 3rem;
+    font-size: 1.2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-top:3rem;
+}
+
+
