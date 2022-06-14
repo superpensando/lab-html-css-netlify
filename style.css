@@ -321,7 +321,9 @@ body {
 }
 
 /* Blog */
-
+.blog {
+    border-top:3px solid #222222;
+}
 .blog .section__wrapper {
     display: flex;
 }
@@ -389,4 +391,54 @@ body {
 .blog__item-by + .blog__item-link,
 .blog__item-link + .blog__item-desc {
     margin-top:1.5rem; 
+}
+
+/* Tastimonial */
+.tastimonial {
+    position: relative;
+    background-image: url(./assets/img/testi-bg.jpeg);
+    background-position: center;
+    background-attachment:fixed; 
+}
+.tastimonial__avatar {
+    position: absolute;
+    top:-5rem;
+    left:calc( 50% - 5rem);
+    background-color: #eee;
+    border-radius: 50%;
+}
+.tastimonial__avatar img {
+    width:10rem;
+    height:10rem;
+}
+.tastimonial__wrapper {
+    max-width: 400px;
+    margin:0 auto;
+    text-align: center;
+    color: #FFF;
+    padding-top:80px;
+    padding-bottom:80px;
+}
+.tastimonial__name {
+    font-size: 1.6rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.tastimonial__location {
+    font-size: 1rem;
+    font-style: italic;
+    text-transform: uppercase;
+}
+
+.tastimonial__quote {
+    display: block;
+    font-size: 1.4rem;
+    line-height: 3.3rem;
+    letter-spacing: 0.4px;
+}
+.tastimonial__name + .tastimonial__location {
+    margin-top:1rem; 
+}
+.tastimonial__location + .tastimonial__quote {
+    margin-top:3rem;
 }
