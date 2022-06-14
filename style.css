@@ -87,6 +87,7 @@ body {
 }
 
 
+
 /* Header */
 .header__wrapper {
     display:flex;  
@@ -177,7 +178,7 @@ body {
 
 /* Services */
 
-.section__wrapper::after {
+.services .section__wrapper::after {
     display: block;
     content: "";
     clear: both;
@@ -222,3 +223,98 @@ body {
     margin-top:5rem; 
 }
 
+/* Lastest Works */
+
+.lastest-works .section__wrapper::after {
+    display: block;
+    content: "";
+    clear: both;
+}
+.lastest-works__item {
+    position: relative;
+    width: calc( 25% - 1rem) ;
+    margin-bottom: 1rem;  
+    display:block;
+    float:left; 
+ }
+ .lastest-works__item  + .lastest-works__item {
+     margin-left:1rem; 
+ }
+ .lastest-works__item:nth-child(4n+1){
+     margin-left:0; 
+}
+.lastest-works__item-img {
+    width: 100% ;
+    height:auto; 
+}
+.lastest-works__item-hover {
+    position:absolute;
+    top:0;
+    left:0; 
+    width:100%;
+    height:100%;
+    text-align:center; 
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.lastest-works__item-hover:hover  {
+    background-color: rgba(34, 34, 34, 0.9);
+    color: #101010;
+    font-size: 1.3rem; 
+}
+.lastest-works__item-link {
+    height: 5rem;
+    width: 5rem;
+    background-color: #fff;
+    color: #272727;
+    border-radius: 50%;
+    line-height: 5.4rem;
+    font-size: 1.6rem;
+    margin: 0 auto;
+    display:none; 
+
+}
+.lastest-works__item-title {
+    color: #fff;
+    display: inline-block;
+    font-size: 1.4rem;
+    font-weight: bold;
+    font-style: italic;
+    display: none;
+
+}
+
+.lastest-works__item-link + .lastest-works__item-title {
+    margin-top:1rem;
+}
+
+.lastest-works__item-hover:hover .lastest-works__item-title,
+.lastest-works__item-hover:hover .lastest-works__item-link {
+    display:block;
+}
+.lastest-works__item-hover:hover .lastest-works__item-link {
+    background-color: yellow;
+    color: #FFF; 
+}
+
+.lastest-works-more {
+    padding: 5rem; 
+    display:flex;
+    justify-content: space-between;
+}
+
+.lastest-works-more__text {
+    font-size:2.2rem;
+    color:#101010;
+    text-transform: uppercase;
+}
+
+.lastest-works-more__link {
+    background: #333333;
+    color: #fff;
+    padding:1.5rem 3rem;
+    font-size:1.2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+}
