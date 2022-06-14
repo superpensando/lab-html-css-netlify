@@ -302,7 +302,7 @@ body {
 .lastest-works__item-hover:hover .lastest-works__item-link {
     display:block;
 }
-.lastest-works__item-hover:hover .lastest-works__item-link {
+.lastest-works__item-hover .lastest-works__item-link:hover {
     background-color: yellow;
     color: #FFF; 
 }
